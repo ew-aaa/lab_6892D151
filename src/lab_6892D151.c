@@ -3,9 +3,21 @@
 long calculate_factorial(int number )
 {
     // TODO: write your code here
-}
+if (number < 0 || number > 20)
+    {
+        return -1;
+    }
 
-// DO NOT change the code below
+    long result = 1;
+
+    for (int i = 2; i <= number; i++)
+    {
+        result = result * i;
+    }
+
+    return result;
+}
+// DO NOT change the code below 
 #ifndef ___TEST___
 int main() {
     int number =- 1;
